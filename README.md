@@ -20,6 +20,115 @@ Database Language	SQL
 Database (RDBMS) 	MySQL
 Database Software	WAMP or XAMPP Server
 Web Server or Deployment Server	Django Application Development Server
+
+
+
+
+# Fake Job Prediction Using ML Algorithms
+
+This project aims to combat fraudulent job postings on the internet by using machine learning (ML) classification techniques. By detecting fake job advertisements, we help job seekers focus only on legitimate opportunities.
+
+---
+
+## 📂 Project Structure
+
+```
+Fake_Job_prediction_ML_Algorithms-classifications/
+│
+├── data/                # Datasets (raw and processed)
+├── notebooks/           # Jupyter notebooks for exploration and experiments
+├── src/                 # Source code for data processing and model building
+│    ├── data_preprocessing.py
+│    ├── feature_engineering.py
+│    ├── model_training.py
+│    ├── model_evaluation.py
+│    └── utils.py
+├── models/              # Trained ML models
+├── webapp/              # Django web application code
+│    ├── fake_job_detector/
+│    ├── templates/
+│    ├── static/
+│    └── manage.py
+├── requirements.txt     # Python package requirements
+├── README.md            # Project overview (this file)
+└── LICENSE
+```
+
+---
+
+## 🚀 What Does the System Do?
+
+- **Goal:** Identify whether a job posting is real or fake using machine learning.
+- **Why:** Fake job ads waste time and may scam job seekers. Our tool automates the detection process.
+- **How:** We train and evaluate several ML classification algorithms on features extracted from job postings.
+
+---
+
+## 🛠️ How Does It Work?
+
+1. **Data Preparation:**  
+   Collect and preprocess job post data (cleaning, feature extraction).
+
+2. **Model Training:**  
+   Train various ML classifiers (e.g., Logistic Regression, Random Forest, SVM) with tuned parameters for best performance.
+
+3. **Performance Metrics:**  
+   Evaluate models using:
+   - Accuracy
+   - Precision & Recall
+   - F1 Score
+   - ROC-AUC
+
+4. **Web Deployment:**  
+   The best model is integrated into a Django web application, allowing users to input job details and get predictions in real time.
+
+---
+
+## 💻 Requirements
+
+| Component             | Details                        |
+|-----------------------|-------------------------------|
+| OS                    | Windows 10/11                  |
+| Python Version        | 3.10                           |
+| IDE                   | Visual Studio Code             |
+| Front End             | HTML5, CSS3, JavaScript        |
+| Back End              | Django (Python framework)      |
+| Database              | MySQL (via WAMP/XAMPP)         |
+| Web Server            | Django Development Server      |
+
+---
+
+## 🏁 Getting Started
+
+1. **Clone the repository:**  
+   `git clone https://github.com/maheshdasari07/Fake_Job_prediction_ML_Algorithms-classifications.git`
+
+2. **Install dependencies:**  
+   `pip install -r requirements.txt`
+
+3. **Prepare the data:**  
+   Place your dataset files inside the `data/` folder.
+
+4. **Train the models or explore with notebooks:**  
+   Use scripts in `src/` or open Jupyter notebooks in `notebooks/` for experimentation.
+
+5. **Run the web application:**  
+   ```
+   cd webapp
+   python manage.py runserver
+   ```
+
+---
+
+## 🏆 Conclusion
+
+Our machine learning-based solution helps job seekers avoid scams by automatically detecting fraudulent job postings. By leveraging multiple classifiers and evaluation techniques, the system provides reliable predictions to guide users toward genuine job opportunities.
+
+---
+
+## 📄 License
+
+See [LICENSE](LICENSE) for details.
 Design/Modelling	Rational Rose
 
 CONCLUSIONS 
